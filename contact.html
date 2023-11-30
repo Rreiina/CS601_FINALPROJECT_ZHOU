@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Jiahe - Personal Website</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+  <header class="header-outer">
+      <div class="header-inner">
+
+          <!-- Title Logo -->
+          <div class="header-logo">
+              <img src="image/contact.png" alt="Logo">
+          </div>
+
+          <!-- Title Text -->
+          <div class="header-title">
+            <h1>Welcome to JIAHE's Site</h1>
+        </div>
+    </div>
+           <!--Navigation Bar-->
+            <nav class="header-navigation">
+                <a href="index.html">Home</a>
+                <a href="hobby.html">Hobbies</a>
+                <a href="contact.html">Contact</a>
+                <!-- Add more navigation links as needed still working it.... -->
+            </nav>
+    </header>
+  
+  <main class="widget">
+      <form id="form" class="form" name="contactForm" action="https://formsubmit.co/jiahe933@bu.edu" 
+          method="post" onsubmit="return formValidation()">
+
+          <h2>Contact Us</h2>
+          <hr>
+          <div class="form-container">
+              <label>First Name</label>
+              <input type="text" id="firstName" name="firstName" placeholder="Please enter your first name..." required>
+              <small>Error Message</small>
+          </div>
+          <div class="form-container">
+              <label>Last Name</label>
+              <input type="text" id="lastName" name="lastName" placeholder="Please enter your last name..." required>
+              <small id="error">Error Message</small>
+          </div>
+          <div class="form-container">
+              <label>Email</label>
+              <input type="email" id="email" name="email" placeholder="Please enter your email..." required>
+              <small>Error Message</small>
+          </div>
+          <div class="form-container">
+              <label>Phone Number (optional: 000-000-0000)</label>
+              <input type="text" id="phone" name="phone" placeholder="Please enter your phone number...   " required>
+              <small>Error Message</small>
+          </div>
+          <div class="form-container">
+              <label>Message</label>
+              <textarea name="message" id="confirmPassword" placeholder="Please leave your message here..." rows="5" cols="30" required></textarea>
+          </div>
+          <input type="submit" value="Submit" id="submitButton">
+          <input type="reset" value="Reset" id="resetButton" onclick="formReset()">
+      </form>
+  </main> 
+  <!-- footer -->
+  <footer class="footer">
+      <h5>Contact Me</h5>
+      <!-- Email -->
+      <a href="mailto:jiahe933@bu.edu"><img src="image/email.png" alt="email" width="25" height="25"></a>
+      <small>
+          Copyright &copy; 2023, Jiahe Zhou <br />
+          All icons from <a href="https://icons8.com/">Icons8</a>
+      </small>
+  </footer>
+  <script src="js/script.js"></script>
+</body>
+</html>
